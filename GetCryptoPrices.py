@@ -3,8 +3,8 @@ import yfinance as yf
 import os
 
 # Get Bitcoin data
-tic = ['BTC-USD', 'LTC-USD', 'BSV-USD', 'DOGE-USD', 'ETC-USD', 'ETH-USD', 'XTZ-USD', 'XLM-USD', 'ANKR-USD', 'ADA-USD', 'ATOM-USD', 'DOT-USD', 'ALGO-USD', 'SOL-USD', 'SHIB-USD', 'XYO-USD', 'ARPA-USD', 'JASMY-USD', 'GRT1-USD', 'FET-USD', 'CLV-USD', 'USDT-USD', 'MANA-USD', 'UNI1-USD']
-ticz = ['zzzBTC', 'zzzLTC', 'zzzBSV', 'zzzDOGE', 'zzzETC', 'zzzETH','zzzXTZ', 'zzzXLM', 'zzzANKR', 'zzzADA', 'zzzATOM', 'zzzDOT', 'zzzALGO', 'zzzSOL', 'zzzSHIB', 'zzzXYO', 'zzzARPA', 'zzzJASMY', 'zzzGRT', 'zzzFET', 'zzzCLV', 'zzzUSDT', 'zzzMANA', 'zzzUNI']
+tic = ['BTC-USD', 'LTC-USD', 'BSV-USD', 'DOGE-USD', 'ETC-USD', 'ETH-USD', 'XTZ-USD', 'XLM-USD', 'ANKR-USD', 'ADA-USD', 'ATOM-USD', 'DOT-USD', 'ALGO-USD', 'SOL-USD', 'SHIB-USD', 'XYO-USD', 'ARPA-USD', 'JASMY-USD', 'GRT6719-USD', 'FET-USD', 'CLV-USD', 'USDT-USD', 'MANA-USD', 'UNI7083-USD', 'SAND-USD']
+ticz = ['zzzBTC', 'zzzLTC', 'zzzBSV', 'zzzDOGE', 'zzzETC', 'zzzETH','zzzXTZ', 'zzzXLM', 'zzzANKR', 'zzzADA', 'zzzATOM', 'zzzDOT', 'zzzALGO', 'zzzSOL', 'zzzSHIB', 'zzzXYO', 'zzzARPA', 'zzzJASMY', 'zzzGRT', 'zzzFET', 'zzzCLV', 'zzzUSDT', 'zzzMANA', 'zzzUNI', 'zzzSAND']
 data = yf.download(tickers=tic, period = '1mo', interval = '1d', group_by='ticker')
 
 all_frames = []
